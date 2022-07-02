@@ -1,0 +1,18 @@
+<!doctype>
+<html>
+    <head></head>
+    <body>
+        <h1>Converts Object Values to an Array</h1>
+        <p id="obj2array"></p>
+        <script>
+            const student={
+                name:"Jake",
+                age:14,
+                country:"Mongo"
+            };
+            const newArr=Object.values(student);
+            document.getElementById("obj2array").innerHTML=newArr;
+
+        </script>
+    </body>
+</html>
