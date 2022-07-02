@@ -1,0 +1,24 @@
+<!doctype>
+<html>
+
+<head>
+</head>
+
+<body>
+    <h1>Converts object to JSON string</h1>
+    <p id="obj2str"></p>
+
+    <script>
+        const student = {
+            name: "Jake",
+            age: 14,
+            country: "Mongo",
+        };
+
+        const newStr = JSON.stringify(student);
+        document.getElementById("obj2str").innerHTML = newStr;
+    </script>
+
+</body>
+
+</html>
