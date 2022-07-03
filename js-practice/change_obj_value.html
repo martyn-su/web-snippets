@@ -1,0 +1,21 @@
+<!doctype>
+<html>
+
+<head></head>
+
+<body>
+    <h1>Changing Object Values</h1>
+    <p id="objArr"></p>
+    <script>
+        const student = {
+            name: "Jake",
+            age: 14,
+            country: "Mongo"
+        };
+        Object.defineProperty(student, "country", { value: "Atlantis" });
+        document.getElementById("objArr").innerHTML = JSON.stringify(student);
+
+    </script>
+</body>
+
+</html>
