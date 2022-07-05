@@ -1,0 +1,28 @@
+<!doctype>
+<html>
+
+<head></head>
+
+<body>
+    <h2>Calling an object method</h2>
+    <p id="funCall"></p>
+    <script>
+
+        const student = {
+            full_line: function (height, bmi) {
+                return this.name + ", the " + this.age + " year-old is " + height + " feet tall and has a BMI of " + bmi;
+            }
+        }
+
+        const student1 = {
+            name: "Jake",
+            age: 14,
+            country: "Mongo"
+        };
+        var sen = student.full_line.call(student1, "6", "22");
+        document.getElementById("funCall").innerHTML = sen;
+
+    </script>
+</body>
+
+</html>

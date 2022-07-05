@@ -1,0 +1,24 @@
+<!doctype>
+<html>
+
+<head></head>
+
+<body>
+    <h2>Calling an object method</h2>
+    <p id="objMet"></p>
+    <script>
+        const student = {
+            name: "Jake",
+            age: 14,
+            country: "Mongo",
+            sentence: function(){
+                return this//.name + " the " + this.age + " year old reporting";
+            }
+        };
+        var sen = student.sentence();
+        document.getElementById("objMet").innerHTML = sen;
+
+    </script>
+</body>
+
+</html>
