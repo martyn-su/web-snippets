@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <style>
+
+        </style>
+
+    </title>
+</head>
+
+<body>
+    <h1>Buttons and Clicks to Activate JS</h1>
+    <button type="button" id="butts" style="width:200px;" onclick="myFunction()">Click to change color</button>
+    <p id="demo"> </p>
+
+    <script>
+
+
+        function myFunction() {
+
+            if (document.body.style.backgroundColor == "red") {
+                document.body.style.backgroundColor = "blue";
+                document.getElementById("butts").innerHTML = "Turn to RED.";
+                document.getElementById("butts").style.backgroundColor = "red";
+            }
+            else {
+                document.body.style.backgroundColor = "red";
+                document.getElementById("butts").innerHTML = "Turn to BLUE.";
+                document.getElementById("butts").style.backgroundColor = "blue";
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>
