@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> </title>
+</head>
+
+<body>
+    <h1>Buttons and Clicks to Activate JS</h1>
+    <button type="button" onclick="myFunction()">Click to change paragraph content</button>
+    <p id="demo"> </p>
+
+    <script>
+
+
+        function myFunction() {
+            let par = "This is paragraph content";
+            let awe = "This is awesome";
+
+            if (document.getElementById("demo").innerHTML == par) {
+                document.getElementById("demo").innerHTML = awe;
+            }
+            else {
+                document.getElementById("demo").innerHTML = par;
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>
