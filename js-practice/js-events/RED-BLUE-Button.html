@@ -15,6 +15,21 @@
     <button type="button" id="butts" style="width:200px;" onclick="myFunction()">Click to change color</button>
     <p id="demo"> </p>
 
+<ol id="ordered" style="display: none;">
+    <li>oranges</li>
+    <li>apples</li>
+    <li>bananas</li>
+    <li>kiwis</li>
+</ol>
+
+<ul id="noorder" style="display: block;">
+    <li>oranges</li>
+    <li>apples</li>
+    <li>bananas</li>
+    <li>kiwis</li>
+</ul>
+
+
     <script>
 
 
@@ -24,11 +39,16 @@
                 document.body.style.backgroundColor = "blue";
                 document.getElementById("butts").innerHTML = "Turn to RED.";
                 document.getElementById("butts").style.backgroundColor = "red";
+                document.getElementById("ordered").style.display = none;
+                document.getElementById("noorder").style.display = block;
+
             }
             else {
                 document.body.style.backgroundColor = "red";
                 document.getElementById("butts").innerHTML = "Turn to BLUE.";
                 document.getElementById("butts").style.backgroundColor = "blue";
+                document.getElementById("ordered").style.display = block;
+                document.getElementById("noorder").style.display = none;
             }
 
         }

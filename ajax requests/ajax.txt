@@ -1,0 +1,4 @@
+<p style = "color:blue">
+This is supposed to come from the server <br>
+But lets use local server for now <br>
+</p>
