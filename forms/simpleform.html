@@ -11,6 +11,9 @@
     body{
         background-color: aquamarine;
     }
+    #fname{
+        width: 300px;
+    }
 </style>
 
 </head>
@@ -18,15 +21,18 @@
 <body>
     <form action="/action_page.php">
         <label for="fname">Your Full Names:</label><br>
-        <input type="text" id="fname" name="fname" style="width: 500px;"><br>
-        <input type="radio" id="male" name="male" value="MALE">
+        <input type="text" id="fname" name="fname"><br>
+
+        <input type="radio" id="male" name="fmale" value="MALE">
         <label for="male">MALE</label><br>
-        <input type="radio" id="female" name="female" value="FEMALE">
+        <input type="radio" id="female" name="fmale" value="FEMALE">
         <label for="female">FEMALE</label><br>
-        <input type="checkbox" id="bmw" name="bmw" value="BMW">
+
+        <input type="checkbox" id="bmw" name="carcheck" value="BMW">
         <label for="bmw">I own BMW</label><br>
-        <input type="checkbox" id="merc" name="merc" value="MERC">
-        <label for="merc">I own MERC</label><br>
+        <input type="checkbox" id="merc" name="carcheck" value="MERC">
+        <label for="merc">I own MERCEDES</label><br>
+
         <input type="submit" value="Submit">
     </form>
 </body>
