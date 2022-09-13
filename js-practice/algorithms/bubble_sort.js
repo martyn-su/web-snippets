@@ -3,7 +3,7 @@
 function bubbleSort(arr) {
 
     var i, j;
-    var len = arr.length;
+    let len = arr.length;
 
     var isSwapped = false;
 
@@ -35,7 +35,7 @@ function bubbleSort(arr) {
     
 }
 
-var arr = Array(10).fill().map(() => Math.round(Math.random() * 100))       //generates random integers
+var arr = Array(30).fill().map(() => Math.round(Math.random() * 500))       //generates random integers
 
 // calling the bubbleSort Function
 bubbleSort(arr)

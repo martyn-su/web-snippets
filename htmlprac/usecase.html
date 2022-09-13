@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width:60%;
+            margin:0 auto;
+        }
+
+        h1{
+            text-align:center;
+            margin:30px
+        }
+        div{
+            /*text-decoration: underline;*/
+            background-color:RGB(127, 205, 205);
+            border-radius: 6px;
+            margin-top: 10px;
+        }
+        .tooltip {
+            position: relative;
+            display: inline-block;
+          }
+
+          .tooltip:hover{
+            background-color:RGB(127, 127, 205);
+          }
+
+          .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 250px;
+            background-color: black;
+            color: #fff;
+            text-align: left;
+            border-radius: 6px;
+            padding: 5px 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -60px;
+
+            /* Fade in tooltip - takes 1 second to go from 0% to 100% opacity: */
+            opacity: 0;
+            transition: opacity 1s;
+
+          }
+
+          .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+          }
+    </style>
+</head>
+<body>
+<h1>Hoover To See The Use Case</h1>
+
+<div class="tooltip">Javascript React
+    <span class="tooltiptext">React is a JavaScript library for building user interfaces. React is used to build single-page applications. React allows us to create reusable UI components.</span></div>
+
+<div class="tooltip">ES6 (ECMAScript 6)
+    <span class="tooltiptext">ECMAScript was created to standardize JavaScript, and ES6 is the 6th version of ECMAScript, it waS published in 2015, and is also known as ECMAScript 2015.</span></div>
+
+  <div class="tooltip">React ES6 Classes<span class="tooltiptext">A class is a type of function, but instead of using the keyword function to initiate it, we use the keyword class, and the properties are assigned inside a constructor() method.</span></div>
+
+  <div class="tooltip">React Render HTML<span class="tooltiptext">React's goal is in many ways to render HTML in a web page. React renders HTML to the web page by using a function called ReactDOM.render().</span></div>
+
+  <div class="tooltip">JSX (JavaScript XML)<span class="tooltiptext">JSX allows us to write HTML elements in JavaScript and place them in the DOM without any createElement()  and/or appendChild() methods</span></div>
+
+  <div class="tooltip">React Components<span class="tooltiptext">Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML.</span></div>
+
+  <div class="tooltip">React Class Components<span class="tooltiptext">Before React 16.8, Class components were the only way to track state and lifecycle on a React component. Function components were considered "state-less".</span></div>
+
+
+  <div class="tooltip">React Props<span class="tooltiptext">Props are arguments passed into React components. Props are passed to components via HTML attributes</span></div>
+
+  <div class="tooltip">React Events<span class="tooltiptext">Just like HTML DOM events, React can perform actions based on user events. React has the same events as HTML: click, change, mouseover etc.</span></div>
+
+  <div class="tooltip">React Conditional Rendering<span class="tooltiptext">In React, you can conditionally render components</span></div>
+
+  <div class="tooltip">React Lists<span class="tooltiptext">In React, you will render lists with some type of loop. The JavaScript map() array method is generally the preferred method.</span></div>
+
+  <div class="tooltip">React Forms<span class="tooltiptext">Just like in HTML, React uses forms to allow users to interact with the web page.</span></div>
+
+  <div class="tooltip">React Router<span class="tooltiptext">Create React App doesn't include page routing. React Router is the most popular solution</span></div>
+
+  <div class="tooltip">React Memo<span class="tooltiptext">Use memo to keep react components from needlessly re-rendering</span></div>
+
+  <div class="tooltip">Styling React Using CSS<span class="tooltiptext">There are many ways to style React with CSS: Inline styling, CSS stylesheets, CSS Modules</span></div>
+
+  <div class="tooltip">Styling React Using Sass<span class="tooltiptext">Create a Sass file the same way as you create CSS files, but Sass files have the file extension .scss. In Sass files you can use variables and other Sass functions. Import the Sass file the same way as you imported a CSS file </span></div>
+
+  <div class="tooltip">React Hooks<span class="tooltiptext">Hooks allow us to "hook" into React features such as state and lifecycle methods. Hooks were added to React in version 16.8. Hooks allow function components to have access to state and other React features. Because of this, class components are generally no longer needed </span></div>
+
+  <div class="tooltip">React useState Hook<span class="tooltiptext">The React useState Hook allows us to track state in a function component. State generally refers to data or properties that need to be tracking in an application.</span></div>
+
+  <div class="tooltip">React useEffect Hook<span class="tooltiptext">The useEffect Hook allows you to perform side effects in your components. Some examples of side effects are: fetching data, directly updating the DOM, and timers. useEffect accepts two arguments. The second argument is optional. useEffect(function, dependency)</span></div>
+
+  <div class="tooltip">React useContext Hook<span class="tooltiptext">React Context is a way to manage state globally. It can be used together with the useState Hook to share state between deeply nested components more easily than with useState alone</span></div>
+
+  <div class="tooltip">React useRef Hook<span class="tooltiptext">The useRef Hook allows you to persist values between renders. It can be used to store a mutable value that does not cause a re-render when updated. It can be used to access a DOM element directly</span></div>
+
+  <div class="tooltip">React useReducer Hook<span class="tooltiptext">The useReducer Hook is similar to the useState Hook. It allows for custom state logic. If you find yourself keeping track of multiple pieces of state that rely on complex logic, useReducer may be useful</span></div>
+
+  <div class="tooltip">React useCallback Hook<span class="tooltiptext">The React useCallback Hook returns a memoized callback function. Think of memoization as caching a value so that it does not need to be recalculated. This allows us to isolate resource intensive functions so that they will not automatically run on every render. The useCallback Hook only runs when one of its dependencies update. This can improve performance</span></div>
+
+  <div class="tooltip">React useMemo Hook<span class="tooltiptext">The React useMemo Hook returns a memoized value. The useMemo and useCallback Hooks are similar. The main difference is that useMemo returns a memoized value and useCallback returns a memoized function</span></div>
+
+  <div class="tooltip">React Custom Hooks<span class="tooltiptext">Hooks are reusable functions. When you have component logic that needs to be used by multiple components, we can extract that logic to a custom Hook. Custom Hooks start with "use". Example: useFetch </span></div>
+
+</body>
+</html>
