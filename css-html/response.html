@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Responsive Layout Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Default styles for larger screens (desktops) */
+    .container {
+      width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Responsive styles for smaller screens (tablets) */
+    @media (max-width: 1024px) {
+      .container {
+        width: 100%;
+        padding: 20px;
+        background-color: gray;
+      }
+    }
+
+    /* Responsive styles for mobile phones */
+    @media (max-width: 600px) {
+      .container {
+        width: 100%;
+        padding: 10px;
+        background-color: aquamarine;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Our Website</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus feugiat nisl eget feugiat condimentum. Nullam convallis nisi eu purus aliquam iaculis. Sed aliquet ac metus a efficitur.</p>
+  </div>
+</body>
+</html>

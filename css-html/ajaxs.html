@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ajax Example</title>
+  <style>
+
+    body{
+      background-color: bisque;
+      margin:auto 50px;
+    }
+
+    button{
+      background-color: blue;
+      color:chartreuse;
+    }
+    
+  </style>
+</head>
+<body>
+  <h1>Random Quote Generator</h1>
+  <button id="quoteButton">Get Quote</button>
+  <div id="quoteDisplay"></div>
+
+  <script>
+    document.getElementById("quoteButton").addEventListener("click", getQuote);
+
+    function getQuote() {
+      const xhr = new XMLHttpRequest();
+      xhr.open("GET", "https://api.quotable.io/random");
+
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+          if (xhr.status === 200) {
+            const response = JSON.parse(xhr.responseText);
+            document.getElementById("quoteDisplay").textContent = response.content;
+          } else {
+            console.error("Error fetching data: ", xhr.status);
+          }
+        }
+      };
+
+      xhr.send();
+    }
+  </script>
+</body>
+</html>

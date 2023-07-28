@@ -1,0 +1,53 @@
+{
+	"folders": [
+		{
+			"path": "web-snippets"
+		},
+		{
+			"path": "50projects50days"
+		},
+		{
+			"path": "1000_Project_Ideas"
+		},
+		{
+			"path": "awesome-c"
+		},
+		{
+			"path": "c-snippets"
+		},
+		{
+			"path": "desktop-tutorial"
+		},
+		{
+			"path": "gsap_practice"
+		},
+		{
+			"path": "java-design-patterns"
+		},
+		{
+			"path": "java-snippets"
+		},
+		{
+			"path": "kotlin-projects"
+		},
+		{
+			"path": "martyn-su"
+		},
+		{
+			"path": "NotificationTimer"
+		},
+		{
+			"path": "Portfolio-site"
+		},
+		{
+			"path": "python-mini-projects"
+		},
+		{
+			"path": "python-projects"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "web-snippets"
+	}
+}
